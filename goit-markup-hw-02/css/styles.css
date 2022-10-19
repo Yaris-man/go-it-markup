@@ -1,0 +1,423 @@
+/* Змінні CSS текст, фон, виділення */
+
+:root {
+  /* Style лого */
+  --logo-color-text-main: #2196f3;
+  --logo-color-text-header: #000000;
+  --logo-color-text-footer: #ffffff;
+  --logo-font-size: 26px;
+  --logo-fone-weight: 700;
+
+  /* Колір основного тексту #212121 */
+  --primary-color-text: #212121;
+  --secondary-color-text: #757575;
+  --color-white: #fff;
+
+  /* Колір активних посилань #2196F3 */
+  --link-color-hover: #2196f3;
+  --button-color-hover: #188ce8;
+
+  /* Текст фону кнопок фільтру */
+  --filter-bg-color: #f5f4fa;
+  --button-bg-color: #2196f3;
+
+  /* Колір бекграунд головна */
+  --color-bg-main: #2f303a;
+
+  /* Колір бекграунд футер */
+  --color-bg-footer: #2f303a;
+
+  --contact-footer-color: #ffffff99; /* Контакти в хедер і футері #ffffff99*/
+
+  /* Стилі шрифтів */
+  /* Жирність і розмір шрифтів*/
+  --main-font-size: 14px;
+  --secondary-font-size: 16px;
+  --main-font-weight: 500;
+  --secondary-font-weight: 400;
+
+  /* Жирність і розмір заголовків */
+  --title-font-weight: 700;
+  --title-font-main: 36px;
+  --title-font-secondary: 18px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color-text);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+}
+
+/* Стиль відображення списку */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Підкреслювання посилань */
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--link-color-hover);
+}
+
+/* Стиль логотипу */
+.logo-text {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: var(--logo-fone-weight);
+  font-size: var(--logo-font-size);
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-text-main);
+}
+
+/* Частина логотипу в хедері */
+.logo-text-header {
+  color: var(--logo-color-text-header);
+}
+
+.nav-title {
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color-text);
+}
+/* Підсвітка активної сторінки */
+.current {
+  color: var(--link-color-hover);
+}
+.header {
+  display: flex;
+  width: 1600px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: yellow; */
+  /* padding-left: 215px; */
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
+}
+
+.menu-nav {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 215px;
+}
+.site-nav {
+  display: flex;
+  gap: 30px;
+  padding-left: 95px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+/* Контакти в хедері */
+.contact {
+  line-height: 1.42;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.contact-list {
+  display: flex;
+  gap: 50px;
+  padding-left: 345px;
+  padding-right: 215px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero {
+  width: 1600px;
+  max-height: 600px;
+  background-color: var(--color-bg-main);
+  margin-left: auto;
+  margin-right: auto;
+    padding-top: 200px;
+  padding-bottom: 200px;
+  
+}
+
+/* Заголовок */
+.hero-title {
+  width: 700px;
+  height: 120px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  /* background-color: var(--color-bg-main); */
+  /* display: block; */
+  
+}
+/* Кнопка замовити послугу */
+.hero-button {
+  width: 216px;
+  height: 50px;
+  background: var(--button-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  
+}
+
+.hero-button:hover,
+.hero-button:active {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-button-title {
+  font-weight: var(--title-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.88;
+  color: var(--color-white);
+} 
+
+/* Загловок особливостей */
+.features {
+width: 1170px;
+height: 98px;
+margin-left: auto;
+margin-right: auto;
+padding-top: 50px;
+padding-bottom: 95px;
+
+}
+.features-description {
+  font-weight: var(--secondary-font-weight);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color-text);  
+}
+.features-list{
+  display: flex;
+  /* flex-wrap: wrap; */
+   /* width: 270px; */
+   justify-content: center;
+/* height: 72px; */
+
+ 
+}
+.features-title {
+  font-size: var(--main-font-size);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color-text);
+}
+/* Опис особливостей  */
+
+
+/* Чим ми займаємося */
+.work {
+  /* display: flex; */
+}
+
+.team {
+  position: relative;
+width: 1600px;
+height: 648px;
+background: #f5f4fa;
+ padding-top:95px; 
+margin-top: 95px ;
+margin-left: auto;
+margin-right: auto;
+}
+.work-team-title {
+  /* font-weight: 700; */
+  font-size: var(--title-font-main);
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color-text);
+  /* margin-top: 50px; */
+}
+
+.team-title {
+  /* font-weight: 700; */
+  font-size: var(--title-font-main);
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color-text);
+}
+
+.team-name {
+  font-weight: var(--main-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color-text);
+}
+
+.team-description {
+  font-weight: var(--main-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.19;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color-text);
+}
+.work-list {
+  display: flex;
+  
+  gap: 36px;
+  justify-content: center;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  background: #f5f4fa;
+  justify-content: center;
+  /* margin-top: 50px; */
+  /* margin-bottom: 95px; */
+  margin-left: auto;
+}
+/* Filter Design Дизайн кнопок*/
+.filter-section {
+  padding-top: 105px;
+  width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  font-family: inherit;
+  font-weight: var(--main-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* color: var(--primary-color-text); */
+  width: 125px;
+  height: 38px;
+  background: var(--filter-bg-color);
+  border: none;
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  background: var(--link-color-hover);
+  color: var(--color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 36px;
+  /* background: #f5f4fa; */
+}
+
+/* Дизайн робіт */
+/* Позиціонування блоку проекти */
+.project-section {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 80px;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.item {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+  background-color: var(--color-white);
+  padding-bottom: 20px;
+}
+
+.project-title {
+  /* font-weight: 700; */
+  font-size: var(--title-font-secondary);
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+.project-description {
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 0.53;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color-text);
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+/* Footer Design */
+.footer {
+  /* position: absolute; */
+  width: 1600px;
+  height: 252px;
+  background: var(--color-bg-footer);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-address {
+  padding-top: 60px;
+  padding-left: 215px;
+  padding-bottom: 60px;
+}
+/* Частина логотипу у футері */
+.logo-text-footer {
+  color: var(--logo-color-text-footer);
+}
+
+/* Addres design */
+.address {
+  font-style: inherit;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: var(--secondary-font-weight);
+  margin-top: 20px;
+}
+
+.address-list {
+  padding-bottom: 10px;
+}
+
+.address-map {
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+}
+
+.address-contact {
+  color: #ffffff99;
+}
